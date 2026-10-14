@@ -13,19 +13,19 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Configuração Customizada do Tailwind -->
+    <!-- PALETA ORIGINAL (ÂMBAR, DOURADO E TERROSO) -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            gold: '#D97706',      // Dourado cor de massa de empada
-                            amber: '#F59E0B',     // Amarelo quente
-                            light: '#FFFBEB',     // Creme / Creme de leite
-                            dark: '#271C19',      // Marrom escuro para texto/contraste
-                            red: '#DC2626',       // Vermelho destaque
-                            rust: '#7C2D12'       // Terroso elegante
+                            gold: '#D97706',      /* Dourado cor de massa de empada */
+                            amber: '#F59E0B',     /* Amarelo quente */
+                            light: '#FFFBEB',     /* Creme / Off-white amarelado */
+                            dark: '#271C19',      /* Marrom escuro para texto/contraste */
+                            red: '#DC2626',       /* Vermelho destaque */
+                            rust: '#7C2D12'       /* Terroso elegante */
                         }
                     },
                     fontFamily: {
@@ -61,17 +61,17 @@
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-2 group">
                     <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-gold to-brand-amber flex items-center justify-center text-white text-2xl shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-[#fa8231] fa-cookie"></i>
+                        <i class="fa-solid fa-cookie"></i>
                     </div>
                     <div>
                         <span class="block text-2xl font-extrabold font-serif text-brand-dark tracking-tight leading-none">Divina<span class="text-brand-gold">Empada</span></span>
-                        <span class="text-[10px] uppercase font-bold tracking-widest text-brand-rust block mt-1">Artesanal & Caseira</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-brand-rust block mt-1">Empadões & Sobremesas</span>
                     </div>
                 </a>
 
                 <!-- Nav Menu Desktop -->
                 <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
-                    <a href="#tamanhos" class="text-gray-700 hover:text-brand-gold transition-colors">Tamanhos</a>
+                    <a href="#tamanhos" class="text-gray-700 hover:text-brand-gold transition-colors">Opções</a>
                     <a href="#cardapio" class="text-gray-700 hover:text-brand-gold transition-colors">Cardápio</a>
                     <a href="#simulador" class="text-gray-700 hover:text-brand-gold transition-colors">Simular Pedido</a>
                     <a href="#como-funciona" class="text-gray-700 hover:text-brand-gold transition-colors">Como Funciona</a>
@@ -90,15 +90,11 @@
         <!-- Dropdown Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-amber-100 px-4 pt-3 pb-6 shadow-xl">
             <div class="flex flex-col gap-3 font-medium text-base">
-                <a href="#tamanhos" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Tamanhos & Opções</a>
+                <a href="#tamanhos" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Marmitas & Opções</a>
                 <a href="#cardapio" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Cardápio Completo</a>
                 <a href="#simulador" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Monte seu Pedido</a>
                 <a href="#como-funciona" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Como Encomendar</a>
                 <a href="#contato" class="mobile-link py-2 px-3 rounded-lg hover:bg-amber-50 text-gray-700">Contato & Localização</a>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20empadas." target="_blank" class="mt-2 w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-xl text-center shadow-md flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span>Chamar no WhatsApp</span>
-                </a>
             </div>
         </div>
     </header>
@@ -112,15 +108,15 @@
                     <!-- Badge -->
                     <div class="inline-flex items-center gap-2 bg-brand-gold/90 text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-lg border border-amber-300/30 badge-pulse">
                         <i class="fa-solid fa-star text-amber-200"></i>
-                        <span>100% Caseira • Receita de Família</span>
+                        <span>100% Caseira • Receita Especial</span>
                     </div>
 
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif leading-tight mb-6">
-                        A Massa Derrete na Boca, O Recheio <span class="text-brand-amber underline decoration-brand-gold decoration-wavy decoration-2">Transborda!</span>
+                        Marmitas de Empadão & <span class="text-brand-amber decoration-brand-gold">Sobremesas Cremosas!</span>
                     </h1>
 
                     <p class="text-lg sm:text-xl text-amber-100 font-light mb-8 max-w-2xl leading-relaxed">
-                        Empadas artesanais feitas diariamente com ingredientes selecionados. Do lanche individual até a sua festa, entregamos quentinha e crocante!
+                        Marmitas artesanais de empadão e doces incríveis preparados diariamente com ingredientes selecionados!
                     </p>
 
                     <!-- CTAs -->
@@ -138,36 +134,16 @@
                     <!-- Destaques rápidos no hero -->
                     <div class="mt-10 pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center">
                         <div>
-                            <span class="block text-2xl font-bold text-brand-amber">Massa Fina</span>
-                            <span class="text-xs text-amber-200/80">Receita Tradicional</span>
+                            <span class="block text-2xl font-bold text-brand-amber">Marmitas</span>
+                            <span class="text-xs text-amber-200/80">De Empadão</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold text-brand-amber">Vários</span>
-                            <span class="text-xs text-amber-200/80">Tamanhos Disponíveis</span>
+                            <span class="block text-2xl font-bold text-brand-amber">Ingredientes</span>
+                            <span class="text-xs text-amber-200/80">Personalizáveis</span>
                         </div>
                         <div>
-                            <span class="block text-2xl font-bold text-brand-amber">Entrega</span>
-                            <span class="text-xs text-amber-200/80">Rápida e Sem Frescura</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto Card de Destaque -->
-                <div class="md:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-md">
-                        <!-- Moldura Decorativa -->
-                        <div class="absolute -inset-2 bg-gradient-to-r from-brand-gold to-brand-amber rounded-3xl blur-lg opacity-50"></div>
-                        
-                        <div class="relative bg-brand-dark border-2 border-brand-gold/30 rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800" alt="Empada Artesanal Dourada" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500">
-                            <div class="p-5 text-white">
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-xs uppercase tracking-wider text-brand-amber font-bold">Mais Pedida</span>
-                                    <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">Suculenta</span>
-                                </div>
-                                <h3 class="text-xl font-serif font-bold">Frango com Catupiry Real</h3>
-                                <p class="text-sm text-gray-300 mt-1">Frango desfiado temperado com especiarias e coberto com bastante requeijão de verdade.</p>
-                            </div>
+                            <span class="block text-2xl font-bold text-brand-amber">Sobremesas</span>
+                            <span class="text-xs text-amber-200/80">Especiais</span>
                         </div>
                     </div>
                 </div>
@@ -176,85 +152,59 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE TAMANHOS -->
+    <!-- TAMANHOS / OPÇÕES ALTERADAS (SOMENTE MARMITAS DE EMPADÃO E SOBREMESAS) -->
     <section id="tamanhos" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14">
                 <span class="text-brand-gold uppercase text-xs font-bold tracking-widest bg-amber-100 px-3 py-1 rounded-full">Sua Fome no Tamanho Certo</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brand-dark mt-3">Escolha o Tamanho Perfeito</h2>
-                <p class="text-gray-600 mt-2">Trabalhamos com diferentes tamanhos de empadas para atender desde o seu lanche da tarde individual até festas e reuniões com a galera!</p>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brand-dark mt-3">Escolha sua Refeição ou Sobremesa</h2>
+                <p class="text-gray-600 mt-2">Trabalhamos com marmitas super recheadas de empadão e sobremesas artesanais incríveis!</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 
-                <!-- Tamanho Mini / Festa -->
-                <div class="bg-brand-light border border-amber-200/80 rounded-2xl p-6 relative hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
-                    <div>
-                        <div class="w-14 h-14 bg-amber-200/60 rounded-2xl flex items-center justify-center text-brand-rust text-2xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-cake-candles"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark font-serif">Mini / Tamanho Festa</h3>
-                        <p class="text-xs text-brand-gold font-semibold uppercase mt-1">Ideal para Eventos & Coquetéis</p>
-                        <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            Pequenas na medida certa, perfeitas para aniversários, reuniões de trabalho ou petiscar. Vendidas em centos ou dezenas.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-amber-200/60 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-gray-500 block">A partir de</span>
-                            <span class="text-2xl font-extrabold text-brand-dark">R$ 2,50 <span class="text-xs font-normal text-gray-500">/un</span></span>
-                        </div>
-                        <a href="#simulador" class="text-brand-gold font-bold text-sm hover:underline flex items-center gap-1">
-                            Pedir Cento <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tamanho Tradicional -->
-                <div class="bg-gradient-to-b from-amber-500/10 to-brand-gold/10 border-2 border-brand-gold rounded-2xl p-6 relative hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-md">
-                    <div class="absolute -top-3 right-6 bg-brand-gold text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow">
-                        Mais Vendida
-                    </div>
+                <!-- Marmita de Empadão -->
+                <div class="bg-amber-50/60 border-2 border-brand-gold/40 rounded-2xl p-6 relative hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                     <div>
                         <div class="w-14 h-14 bg-brand-gold text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform shadow-md">
-                            <i class="fa-solid fa-cookie"></i>
+                            <i class="fa-solid fa-box"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark font-serif">Tradicional / Média</h3>
-                        <p class="text-xs text-brand-gold font-semibold uppercase mt-1">Lanche Individual Perfeito</p>
+                        <h3 class="text-xl font-bold text-brand-dark font-serif">Marmita de Empadão Salgado</h3>
+                        <p class="text-xs text-brand-gold font-semibold uppercase mt-1">Refeição Completa Individual</p>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            O tamanho clássico de padaria! Recheio generoso com massa leve que esfarela na boca. Excelente para o café da tarde.
+                            Marmita de empadão bem servida com massa artesanal leve, disponível com opções ajustáveis de requeijão cremoso e queijo muçarela.
                         </p>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-amber-300/60 flex items-center justify-between">
+                    <div class="mt-6 pt-4 border-t border-amber-200 flex items-center justify-between">
                         <div>
-                            <span class="text-xs text-gray-500 block">A partir de</span>
-                            <span class="text-2xl font-extrabold text-brand-dark">R$ 7,00 <span class="text-xs font-normal text-gray-500">/un</span></span>
+                            <span class="text-xs text-gray-500 block">Opções Salgadas</span>
+                            <span class="text-2xl font-extrabold text-brand-dark">Frango / Carne Seca</span>
                         </div>
-                        <a href="#simulador" class="bg-brand-gold text-white font-bold text-xs px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors">
-                            Monte Agora
+                        <a href="#simulador" class="bg-brand-gold text-white font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-amber-600 transition-colors">
+                            Monte seu Pedido
                         </a>
                     </div>
                 </div>
 
-                <!-- Tamanho Gourmet / Gigante -->
-                <div class="bg-brand-light border border-amber-200/80 rounded-2xl p-6 relative hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                <!-- Sobremesas no Pote -->
+                <div class="bg-amber-50/60 border-2 border-brand-gold/40 rounded-2xl p-6 relative hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
                     <div>
-                        <div class="w-14 h-14 bg-amber-200/60 rounded-2xl flex items-center justify-center text-brand-rust text-2xl mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-crown"></i>
+                        <div class="w-14 h-14 bg-brand-amber text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform shadow-md">
+                            <i class="fa-solid fa-ice-cream"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark font-serif">Gourmet / Super Recheada</h3>
-                        <p class="text-xs text-brand-gold font-semibold uppercase mt-1">Refeição Completa</p>
+                        <h3 class="text-xl font-bold text-brand-dark font-serif">Doces & Sobremesas Cremosas</h3>
+                        <p class="text-xs text-brand-gold font-semibold uppercase mt-1">Fondues, Banoffee & Cacau 70%</p>
                         <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-                            Para quem tem fome de verdade! Recheio duplo, sabores especiais e queijo gratinado por cima. Uma verdadeira refeição.
+                            Adoce seu dia com nosso Fondue Cremoso de Frutas, Banoffee artesanal em dois tamanhos e Brigadeiro no Pote com Cacau 70%.
                         </p>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-amber-200/60 flex items-center justify-between">
+                    <div class="mt-6 pt-4 border-t border-amber-200 flex items-center justify-between">
                         <div>
                             <span class="text-xs text-gray-500 block">A partir de</span>
-                            <span class="text-2xl font-extrabold text-brand-dark">R$ 12,00 <span class="text-xs font-normal text-gray-500">/un</span></span>
+                            <span class="text-2xl font-extrabold text-brand-dark">R$ 12,00</span>
                         </div>
-                        <a href="#simulador" class="text-brand-gold font-bold text-sm hover:underline flex items-center gap-1">
-                            Ver Sabores <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <a href="#cardapio" class="text-brand-gold font-bold text-sm hover:underline flex items-center gap-1">
+                            Ver Cardápio <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
                 </div>
@@ -263,166 +213,116 @@
         </div>
     </section>
 
-    <!-- CARDÁPIO INTERATIVO -->
-    <section id="cardapio" class="py-16 bg-amber-50/50">
+    <!-- CARDÁPIO ATUALIZADO (NOVOS SABORES E SOBREMESAS) -->
+    <section id="cardapio" class="py-16 bg-amber-50/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
-                <span class="text-brand-gold uppercase text-xs font-bold tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Cardápio do Mano</span>
-                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brand-dark mt-3">Sabores Irresistíveis</h2>
+                <span class="text-brand-gold uppercase text-xs font-bold tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Cardápio Oficial</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-brand-dark mt-3">Sabores & Combinações</h2>
                 <p class="text-gray-600 mt-2">Feitas sempre no dia com ingredientes frescos e sem conservantes.</p>
-            </div>
-
-            <!-- Filtros do Cardápio -->
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10">
-                <button onclick="filterMenu('todos')" class="filter-btn active bg-brand-gold text-white font-medium text-sm px-5 py-2 rounded-full shadow-md transition-all">Todos os Sabores</button>
-                <button onclick="filterMenu('salgadas')" class="filter-btn bg-white hover:bg-amber-100 text-gray-700 font-medium text-sm px-5 py-2 rounded-full border border-amber-200 transition-all">Salgadas Tradicionais</button>
-                <button onclick="filterMenu('especiais')" class="filter-btn bg-white hover:bg-amber-100 text-gray-700 font-medium text-sm px-5 py-2 rounded-full border border-amber-200 transition-all">Gourmet & Especiais</button>
-                <button onclick="filterMenu('doces')" class="filter-btn bg-white hover:bg-amber-100 text-gray-700 font-medium text-sm px-5 py-2 rounded-full border border-amber-200 transition-all">Doces Delícias</button>
             </div>
 
             <!-- Grid de Itens do Cardápio -->
             <div id="menu-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Item 1: Frango com Catupiry -->
-                <div class="menu-item salgadas bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
+                <!-- Item 1: Frango com Requeijão e Queijo Muçarela -->
+                <div class="menu-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=600" alt="Empada de Frango" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-2.5 py-1 rounded-full">Mais Pedida</span>
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=600" alt="Marmita de Empadão de Frango" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-2.5 py-1 rounded-full">Marmita de Empadão</span>
                         </div>
                         <div class="p-5">
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Frango c/ Catupiry</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 7,00</span>
+                                <h3 class="text-lg font-bold font-serif text-brand-dark">Frango c/ Requeijão & Muçarela</h3>
                             </div>
                             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                Peito de frango bem desfiado e temperado com cheiro-verde e catupiry cremoso.
+                                Marmita de empadão recheada com frango bem desfiado, requeijão cremoso e queijo muçarela.
                             </p>
                         </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Frango com Catupiry', 7.00)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
                     </div>
                 </div>
 
-                <!-- Item 2: Carne Seca com Cream Cheese -->
-                <div class="menu-item especiais bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
+                <!-- Item 2: Carne Seca com Requeijão e Queijo Muçarela -->
+                <div class="menu-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=600" alt="Empada de Carne Seca" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                            <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">Gourmet</span>
+                            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=600" alt="Marmita de Empadão de Carne Seca" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-brand-gold text-white text-xs font-bold px-2.5 py-1 rounded-full">Marmita de Empadão</span>
                         </div>
                         <div class="p-5">
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Carne Seca c/ Cream Cheese</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 8,50</span>
+                                <h3 class="text-lg font-bold font-serif text-brand-dark">Carne Seca c/ Requeijão & Muçarela</h3>
                             </div>
                             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                Carne seca dessalgada e desfia no ponto, combinada com suave cream cheese.
+                                Marmita de empadão com carne seca bem desfiada e temperada, requeijão cremoso e queijo muçarela.
                             </p>
                         </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Carne Seca com Cream Cheese', 8.50)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
                     </div>
                 </div>
 
-                <!-- Item 3: Palmito Especial -->
-                <div class="menu-item salgadas bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
+                <!-- Item 3: Fondue Cremoso de Frutas -->
+                <div class="menu-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=80&w=600" alt="Empada de Palmito" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&q=80&w=600" alt="Fondue Cremoso de Frutas" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-xs font-bold px-2.5 py-1 rounded-full">Sobremesa</span>
                         </div>
                         <div class="p-5">
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Palmito Cremoso</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 7,50</span>
+                                <h3 class="text-lg font-bold font-serif text-brand-dark">Fondue Cremoso de Frutas</h3>
                             </div>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                Palmito nobre picadinho com molho branco leve e azeitonas picadas. Opção vegetariana.
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">
+                                Chocolate cremoso especial com opção de frutas frescas:
                             </p>
+                            <!-- OPÇÕES DO FONDUE -->
+                            <ul class="text-xs text-brand-rust font-semibold space-y-1 bg-amber-50 p-2 rounded-lg border border-amber-100">
+                                <li>• Só Morango</li>
+                                <li>• Morango com Uva Verde</li>
+                                <li>• Só Uva</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Palmito Cremoso', 7.50)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
                     </div>
                 </div>
 
-                <!-- Item 4: Camarão Baiano -->
-                <div class="menu-item especiais bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
+                <!-- Item 4: Banoffee (2 Tamanhos) -->
+                <div class="menu-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=600" alt="Empada de Camarão" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                            <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">Premium</span>
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=600" alt="Banoffee Artesanal" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-xs font-bold px-2.5 py-1 rounded-full">Sobremesa</span>
                         </div>
                         <div class="p-5">
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Camarão ao Requeijão</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 9,50</span>
+                                <h3 class="text-lg font-bold font-serif text-brand-dark">Banoffee Artesanal</h3>
                             </div>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                Camarões frescos refogados com tomate, temperos naturais e requeijão culinário.
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3">
+                                Camadas de biscoito, doce de leite artesanal, banana e chantilly polvilhado com canela.
                             </p>
+                            <!-- TAMANHOS BANOFFEE -->
+                            <div class="flex justify-between bg-amber-50 p-2 rounded-lg border border-amber-100 text-xs font-bold text-brand-dark">
+                                <span>Tamanho Menor: <span class="text-brand-gold">R$ 13,00</span></span>
+                                <span>Tamanho Maior: <span class="text-brand-gold">R$ 20,00</span></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Camarão ao Requeijão', 9.50)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
                     </div>
                 </div>
 
-                <!-- Item 5: Brigadeiro Gourmet -->
-                <div class="menu-item doces bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
+                <!-- Item 5: Brigadeiro Cremoso no Pote com Cacau 70% -->
+                <div class="menu-item bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
                     <div>
                         <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&q=80&w=600" alt="Empada Doce de Brigadeiro" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-xs font-bold px-2.5 py-1 rounded-full">Doce</span>
+                            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=600" alt="Brigadeiro cremoso no pote com cacau 70%" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-xs font-bold px-2.5 py-1 rounded-full">Sobremesa</span>
                         </div>
                         <div class="p-5">
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Brigadeiro c/ Morango</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 8,00</span>
+                                <h3 class="text-lg font-bold font-serif text-brand-dark">Brigadeiro Cremoso no Pote</h3>
                             </div>
                             <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                Massa amanteigada doce recheada com brigadeiro de colher e pedaços de morango fresco.
+                                Delicioso brigadeiro gourmet de colher feito com puro cacau 70%, rico em sabor e super cremoso.
                             </p>
                         </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Brigadeiro com Morango', 8.00)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Item 6: Doce de Leite com Queijo -->
-                <div class="menu-item doces bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-amber-100 flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=600" alt="Empada de Doce de Leite" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                            <span class="absolute top-3 left-3 bg-amber-800 text-white text-xs font-bold px-2.5 py-1 rounded-full">Doce</span>
-                        </div>
-                        <div class="p-5">
-                            <div class="flex justify-between items-start mb-2">
-                                <h3 class="text-lg font-bold font-serif text-brand-dark">Doce de Leite c/ Queijo</h3>
-                                <span class="text-brand-rust font-bold text-lg">R$ 7,50</span>
-                            </div>
-                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                                O clássico contraste mineiro: doce de leite caseiro com toque salgadinho de queijo minas.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-5 pt-0">
-                        <button onclick="addQuickItem('Doce de Leite com Queijo', 7.50)" class="w-full bg-amber-100 hover:bg-brand-gold hover:text-white text-brand-dark font-semibold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-plus text-xs"></i> Adicionar à Encomenda
-                        </button>
                     </div>
                 </div>
 
@@ -430,89 +330,85 @@
         </div>
     </section>
 
-    <!-- SIMULADOR / CALCULADORA DE ENCOMENDAS -->
+    <!-- SIMULADOR / ENCOMENDA COM OPÇÕES DE INGREDIENTES -->
     <section id="simulador" class="py-16 bg-white border-y border-amber-200/60">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-brand-dark to-brand-rust rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
                 
                 <div class="text-center max-w-2xl mx-auto mb-8">
-                    <span class="bg-brand-gold text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Simulador de Pedido</span>
-                    <h2 class="text-2xl sm:text-4xl font-bold font-serif mt-3">Monte sua Encomenda Rápida</h2>
-                    <p class="text-amber-100/80 text-sm mt-1">Calcule o valor estimado e envie o pedido diretamente para nosso WhatsApp!</p>
+                    <span class="bg-brand-gold text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Monte sua Encomenda</span>
+                    <h2 class="text-2xl sm:text-4xl font-bold font-serif mt-3">Faça o seu Pedido</h2>
+                    <p class="text-amber-100/80 text-sm mt-1">Escolha seus itens, personalize seus ingredientes e faça o pedido direto!</p>
                 </div>
 
                 <div class="grid lg:grid-cols-12 gap-8 items-start">
                     
-                    <!-- Formulário de Seleção -->
-                    <div class="lg:col-span-7 space-y-4">
+                    <!-- Formulário visual de seleção -->
+                    <div class="lg:col-span-12 space-y-5">
                         
-                        <!-- Tamanho Escolhido -->
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">1. Selecione o Tamanho Desejado:</label>
-                            <select id="sim-tamanho" onchange="calculateTotal()" class="w-full bg-white/10 border border-amber-300/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                <option value="tradicional" class="text-brand-dark">Tradicional / Média (A partir de R$ 7,00)</option>
-                                <option value="festa" class="text-brand-dark">Mini / Festa (A partir de R$ 2,50)</option>
-                                <option value="gourmet" class="text-brand-dark">Gourmet / Super Recheada (A partir de R$ 12,00)</option>
+                        <!-- Escolha da Marmita -->
+                        <div class="bg-white/10 p-4 rounded-2xl border border-amber-300/20">
+                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">1. Selecione a Marmita de Empadão:</label>
+                            <select class="w-full bg-white/10 border border-amber-300/30 rounded-xl px-4 py-3 text-white focus:outline-none">
+                                <option class="text-brand-dark">Frango com Requeijão e Queijo Muçarela (Marmita de Empadão)</option>
+                                <option class="text-brand-dark">Carne Seca com Requeijão e Queijo Muçarela (Marmita de Empadão)</option>
                             </select>
-                        </div>
 
-                        <!-- Lista de Sabores Selecionados -->
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">2. Itens Selecionados:</label>
-                            <div id="cart-items-container" class="bg-white/5 border border-white/10 rounded-xl p-4 min-h-[120px] max-h-[220px] overflow-y-auto space-y-2">
-                                <p id="empty-cart-msg" class="text-gray-400 text-sm text-center py-4">Sua lista está vazia. Adicione itens pelo cardápio acima ou selecione abaixo.</p>
+                            <!-- ADICIONAIS DE INGREDIENTES (COM OU SEM MUÇARELA / REQUEIJÃO) -->
+                            <div class="grid sm:grid-cols-2 gap-4 mt-4 pt-3 border-t border-amber-300/20">
+                                <div>
+                                    <label class="block text-xs text-amber-200 font-bold mb-1">Opção de Requeijão:</label>
+                                    <select class="w-full bg-white/10 border border-amber-300/30 rounded-lg px-3 py-2 text-xs text-white">
+                                        <option class="text-brand-dark">Com Requeijão</option>
+                                        <option class="text-brand-dark">Sem Requeijão</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-amber-200 font-bold mb-1">Opção de Queijo Muçarela:</label>
+                                    <select class="w-full bg-white/10 border border-amber-300/30 rounded-lg px-3 py-2 text-xs text-white">
+                                        <option class="text-brand-dark">Com Muçarela</option>
+                                        <option class="text-brand-dark">Sem Muçarela</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Adicionar Sabor Manualmente -->
-                        <div class="flex gap-2">
-                            <select id="quick-select-flavor" class="flex-1 bg-white/10 border border-amber-300/30 rounded-xl px-3 py-2 text-sm text-white focus:outline-none">
-                                <option value="Frango com Catupiry|7.00" class="text-brand-dark">Frango c/ Catupiry - R$ 7,00</option>
-                                <option value="Carne Seca com Cream Cheese|8.50" class="text-brand-dark">Carne Seca - R$ 8,50</option>
-                                <option value="Palmito Cremoso|7.50" class="text-brand-dark">Palmito Cremoso - R$ 7,50</option>
-                                <option value="Camarão ao Requeijão|9.50" class="text-brand-dark">Camarão ao Requeijão - R$ 9,50</option>
-                                <option value="Brigadeiro com Morango|8.00" class="text-brand-dark">Brigadeiro c/ Morango - R$ 8,00</option>
-                                <option value="Doce de Leite com Queijo|7.50" class="text-brand-dark">Doce de Leite c/ Queijo - R$ 7,50</option>
+                        <!-- Escolha da Sobremesa -->
+                        <div class="bg-white/10 p-4 rounded-2xl border border-amber-300/20">
+                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">2. Selecione a Sobremesa:</label>
+                            <select class="w-full bg-white/10 border border-amber-300/30 rounded-xl px-4 py-3 text-white focus:outline-none">
+                                <option class="text-brand-dark">Nenhuma sobremesa</option>
+                                <option class="text-brand-dark">Fondue Cremoso de Frutas</option>
+                                <option class="text-brand-dark">Banoffee (Tamanho R$ 13,00)</option>
+                                <option class="text-brand-dark">Banoffee (Tamanho R$ 20,00)</option>
+                                <option class="text-brand-dark">Brigadeiro Cremoso no Pote com Cacau 70%</option>
                             </select>
-                            <button onclick="addSelectedFromDropdown()" class="bg-brand-gold hover:bg-amber-600 px-4 py-2 rounded-xl text-sm font-bold text-white transition-colors">
-                                + Adicionar
-                            </button>
-                        </div>
+
+                            <!-- OPÇÃO DE FRUTA PARA O FONDUE -->
+                            <div class="mt-4 pt-3 border-t border-amber-300/20">
+                                <label class="block text-xs text-amber-200 font-bold mb-1">Se escolheu Fondue, selecione a opção das Frutas:</label>
+                                <select class="w-full bg-white/10 border border-amber-300/30 rounded-lg px-3 py-2 text-xs text-white">
+                                    <option class="text-brand-dark">Só Morango</option>
+                                    <option class="text-brand-dark">Morango com Uva Verde</option>
+                                    <option class="text-brand-dark">Só Uva</option>
+                                </select>
+                            </div>
+                        </div> 
 
                         <!-- Campo para Observações -->
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">3. Observações / Data de Entrega:</label>
-                            <input type="text" id="sim-obs" placeholder="Ex: Entregar sábado às 15h, sem cebola..." class="w-full bg-white/10 border border-amber-300/30 rounded-xl px-4 py-2.5 text-sm text-white placeholder-amber-200/50 focus:outline-none">
+                            <label class="block text-xs uppercase tracking-wider text-amber-200 font-bold mb-2">3. Observações / Endereço de Entrega:</label>
+                            <input type="text" placeholder="Ex: Entregar às 19h..." class="w-full bg-white/10 border border-amber-300/30 rounded-xl px-4 py-3 text-sm text-white placeholder-amber-200/50 focus:outline-none">
                         </div>
 
-                    </div>
-
-                    <!-- Resumo do Pedido / Total -->
-                    <div class="lg:col-span-5 bg-white text-brand-dark rounded-2xl p-6 shadow-lg flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-lg font-bold font-serif border-b pb-3 border-gray-100 text-brand-dark">Resumo do Pedido</h3>
-                            
-                            <div class="py-4 space-y-2 text-sm">
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Total de Unidades:</span>
-                                    <span id="total-qty" class="font-bold">0 un</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span class="text-gray-600">Tipo de Empada:</span>
-                                    <span id="summary-tamanho" class="font-semibold text-brand-gold">Tradicional</span>
-                                </div>
-                                <div class="flex justify-between border-t pt-2 mt-2">
-                                    <span class="text-base font-bold">Valor Estimado:</span>
-                                    <span id="total-price" class="text-2xl font-extrabold text-brand-rust">R$ 0,00</span>
-                                </div>
-                            </div>
-                            <p class="text-[11px] text-gray-500 italic mb-4">*Taxa de entrega (se houver) será informada no atendimento.</p>
+                        <!-- Botão Enviar iFood Visual (Alterado do WhatsApp para o iFood) -->
+                        <div class="pt-2">
+                            <a href="https://www.ifood.com.br/delivery/SUA-CIDADE-UF/SEU-RESTAURANTE/SEU-ID" target="_blank" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-red-500/30 transition-all flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                                <span>Peça no iFood</span>
+                            </a>
                         </div>
 
-                        <button onclick="sendOrderWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 text-base">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                            <span>Enviar Pedido pelo Zap</span>
-                        </button>
                     </div>
 
                 </div>
@@ -525,7 +421,7 @@
     <section class="py-16 bg-amber-50/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-brand-gold uppercase text-xs font-bold tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Opinião de Quem Ama</span>
+                <span class="text-brand-gold uppercase text-xs font-bold tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Opinião dos Clientes</span>
                 <h2 class="text-3xl font-bold font-serif text-brand-dark mt-3">O Que Nossos Clientes Dizem</h2>
             </div>
 
@@ -535,9 +431,9 @@
                     <div class="flex text-amber-400 text-sm mb-3">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-gray-600 text-sm italic mb-4">"Encomendei 100 mini empadas para o aniversário da minha filha. Chegaram bem quentinhas, a massa realmente desmancha na boca! Todos os convidados elogiaram."</p>
+                    <p class="text-gray-600 text-sm italic mb-4">"A marmita de empadão de frango com muçarela e requeijão chegou bem quentinha e muito recheada! Excelente qualidade."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center font-bold text-brand-dark text-sm">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 text-brand-dark font-bold flex items-center justify-center text-sm">
                             MC
                         </div>
                         <div>
@@ -552,9 +448,9 @@
                     <div class="flex text-amber-400 text-sm mb-3">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-gray-600 text-sm italic mb-4">"A empada de Carne Seca com Cream Cheese é sem dúvidas a melhor da cidade! Recheio bem caprichado e sem miséria. Peço quase toda semana pro trabalho."</p>
+                    <p class="text-gray-600 text-sm italic mb-4">"O fondue de morango com uva verde é delicioso e o brigadeiro cacau 70% tem um sabor surreal. Super recomendo!"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center font-bold text-brand-dark text-sm">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 text-brand-dark font-bold flex items-center justify-center text-sm">
                             RS
                         </div>
                         <div>
@@ -569,9 +465,9 @@
                     <div class="flex text-amber-400 text-sm mb-3">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-gray-600 text-sm italic mb-4">"Atendimento excelente pelo WhatsApp. O simulador no site ajudou demais a escolher os sabores certinhos pra minha família. Nota 10!"</p>
+                    <p class="text-gray-600 text-sm italic mb-4">"A banoffee é simplesmente perfeita! Atendimento rápido e embalagem muito caprichada."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center font-bold text-brand-dark text-sm">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 text-brand-dark font-bold flex items-center justify-center text-sm">
                             FA
                         </div>
                         <div>
@@ -598,17 +494,17 @@
                 <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-100">
                     <div class="w-12 h-12 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div>
                     <h3 class="font-serif font-bold text-lg mb-2">Escolha os Sabores</h3>
-                    <p class="text-sm text-gray-600">Navegue pelo cardápio ou use nosso simulador para selecionar a quantidade e os recheios do seu gosto.</p>
+                    <p class="text-sm text-gray-600">Navegue pelas opções de marmita de empadão e selecione suas sobremesas favoritas.</p>
                 </div>
                 <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-100">
                     <div class="w-12 h-12 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div>
                     <h3 class="font-serif font-bold text-lg mb-2">Envie no WhatsApp</h3>
-                    <p class="text-sm text-gray-600">Seu pedido vai formatado direto pro nosso WhatsApp. Combinamos o horário de entrega ou retirada.</p>
+                    <p class="text-sm text-gray-600">Seu pedido vai formatado direto para o nosso WhatsApp para combinarmos o horário.</p>
                 </div>
                 <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-100">
                     <div class="w-12 h-12 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div>
                     <h3 class="font-serif font-bold text-lg mb-2">Receba Quentinho</h3>
-                    <p class="text-sm text-gray-600">Preparamos com carinho e entregamos na sua porta bem assada, cheirosa e pronta para saborear!</p>
+                    <p class="text-sm text-gray-600">Preparamos tudo com muito carinho e entregamos diretamente na sua porta!</p>
                 </div>
             </div>
 
@@ -619,7 +515,7 @@
                     <div>
                         <span class="text-brand-gold uppercase text-xs font-bold tracking-widest">Fale Conosco</span>
                         <h2 class="text-3xl font-bold font-serif text-brand-dark mt-1">Dúvidas ou Encomendas Especiais?</h2>
-                        <p class="text-gray-600 text-sm mt-2">Estamos prontos para atende-lo! Entre em contato via WhatsApp ou envie uma mensagem rápida.</p>
+                        <p class="text-gray-600 text-sm mt-2">Estamos prontos para atendê-lo! Entre em contato via WhatsApp ou envie uma mensagem rápida.</p>
                     </div>
 
                     <div class="space-y-4">
@@ -629,7 +525,7 @@
                             </div>
                             <div>
                                 <span class="text-xs text-gray-500 block">WhatsApp / Pedidos</span>
-                                <a href="https://wa.me/5500000000000" target="_blank" class="font-bold text-brand-dark hover:text-brand-gold">(00) 99999-8888</a>
+                                <a href="https://wa.me/5527999107628" target="_blank" class="font-bold text-brand-dark hover:text-brand-gold">(27) 99910-7628</a>
                             </div>
                         </div>
 
@@ -655,26 +551,27 @@
                     </div>
                 </div>
 
-                <!-- Formulário Simples de Mensagem -->
+                <!-- Formulário de Mensagem Direta para WhatsApp -->
                 <div class="lg:col-span-7 bg-white p-6 rounded-2xl border border-amber-200/80 shadow-md">
                     <h3 class="text-lg font-bold font-serif mb-4 text-brand-dark">Envie uma Mensagem Rápida</h3>
-                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <form id="form-contato" class="space-y-4">
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-xs font-bold text-gray-700 mb-1">Seu Nome</label>
-                                <input type="text" required placeholder="Ex: João Silva" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                <input type="text" id="contato-nome" required placeholder="Ex: João Silva" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-gray-700 mb-1">Telefone / WhatsApp</label>
-                                <input type="tel" required placeholder="(00) 00000-0000" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                <input type="tel" id="contato-tel" required placeholder="(00) 00000-0000" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
                             </div>
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-gray-700 mb-1">Assunto / Dúvida</label>
-                            <textarea rows="3" required placeholder="Ex: Gostaria de orçar 150 empadas para um evento no próximo mês..." class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"></textarea>
+                            <textarea id="contato-msg" rows="3" required placeholder="Digite sua mensagem..." class="w-full bg-amber-50/50 border border-amber-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-brand-gold hover:bg-amber-600 text-white font-bold py-2.5 rounded-xl transition-colors text-sm shadow-md">
-                            Enviar Mensagem
+                        <button type="submit" class="w-full bg-brand-gold hover:bg-amber-600 text-white font-bold py-2.5 rounded-xl transition-colors text-sm shadow-md flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Enviar Mensagem</span>
                         </button>
                     </form>
                 </div>
@@ -693,12 +590,12 @@
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-2 mb-3">
                         <div class="w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center text-white text-xl">
-                            <i class="fa-solid fa-[#fa8231] fa-cookie"></i>
+                            <i class="fa-solid fa-cookie"></i>
                         </div>
                         <span class="text-2xl font-bold font-serif text-white">Divina<span class="text-brand-gold">Empada</span></span>
                     </div>
                     <p class="text-gray-400 text-sm max-w-sm">
-                        O melhor sabor caseiro em empadas crocantes e generosamente recheadas. Perfeitas para qualquer momento do seu dia!
+                        O melhor sabor caseiro em marmitas de empadão e sobremesas deliciosas. Perfeitas para qualquer momento do seu dia!
                     </p>
                 </div>
 
@@ -706,7 +603,7 @@
                 <div>
                     <h4 class="font-bold text-sm text-brand-amber uppercase tracking-wider mb-3">Navegação</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#tamanhos" class="hover:text-white transition-colors">Tamanhos Disponíveis</a></li>
+                        <li><a href="#tamanhos" class="hover:text-white transition-colors">Opções Disponíveis</a></li>
                         <li><a href="#cardapio" class="hover:text-white transition-colors">Nosso Cardápio</a></li>
                         <li><a href="#simulador" class="hover:text-white transition-colors">Simulador de Pedidos</a></li>
                         <li><a href="#contato" class="hover:text-white transition-colors">Fale Conosco</a></li>
@@ -719,7 +616,7 @@
                     <div class="flex gap-3">
                         <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-gold flex items-center justify-center text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-gold flex items-center justify-center text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-gold flex items-center justify-center text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/5527999107628" target="_blank" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-gold flex items-center justify-center text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -733,189 +630,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- LÓGICA JAVASCRIPT INTERATIVA -->
-    <script>
-        // Array para armazenar itens no simulador de carrinho
-        let cart = [];
-
-        // 1. Menu Mobile Toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // 2. Filtro de Categorias no Cardápio
-        function filterMenu(category) {
-            const items = document.querySelectorAll('.menu-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-
-            // Atualiza botões
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-gold', 'text-white', 'active');
-                btn.classList.add('bg-white', 'text-gray-700');
-            });
-            event.target.classList.remove('bg-white', 'text-gray-700');
-            event.target.classList.add('bg-brand-gold', 'text-white', 'active');
-
-            // Exibe/oculta cards
-            items.forEach(item => {
-                if (category === 'todos' || item.classList.contains(category)) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // 3. Adicionar item rápido ao simulador
-        function addQuickItem(name, price) {
-            const existingIndex = cart.findIndex(item => item.name === name);
-            if (existingIndex > -1) {
-                cart[existingIndex].qty += 1;
-            } else {
-                cart.push({ name: name, price: price, qty: 1 });
-            }
-            renderCart();
-            
-            // Scroll suave até o simulador se estiver longe
-            document.getElementById('simulador').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Adicionar a partir do select manual
-        function addSelectedFromDropdown() {
-            const select = document.getElementById('quick-select-flavor');
-            const [name, priceStr] = select.value.split('|');
-            const price = parseFloat(priceStr);
-
-            addQuickItem(name, price);
-        }
-
-        // Remover item do carrinho
-        function removeItem(index) {
-            cart.splice(index, 1);
-            renderCart();
-        }
-
-        // Alterar quantidade
-        function updateQty(index, change) {
-            cart[index].qty += change;
-            if (cart[index].qty <= 0) {
-                cart.splice(index, 1);
-            }
-            renderCart();
-        }
-
-        // Renderizar Lista do Carrinho e Recalcular Total
-        function renderCart() {
-            const container = document.getElementById('cart-items-container');
-            
-            if (cart.length === 0) {
-                container.innerHTML = `<p id="empty-cart-msg" class="text-gray-400 text-sm text-center py-4">Sua lista está vazia. Adicione itens pelo cardápio acima ou selecione abaixo.</p>`;
-            } else {
-                let html = '';
-                cart.forEach((item, index) => {
-                    html += `
-                        <div class="flex items-center justify-between bg-white/10 px-3 py-2 rounded-lg text-sm">
-                            <div class="truncate max-w-[160px]">
-                                <span class="font-bold text-amber-200">${item.name}</span>
-                                <span class="text-xs text-gray-300 block">R$ ${item.price.toFixed(2).replace('.', ',')} un</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <button onclick="updateQty(${index}, -1)" class="w-6 h-6 bg-white/20 hover:bg-white/30 rounded text-xs text-white font-bold">-</button>
-                                <span class="font-bold text-white text-xs">${item.qty}</span>
-                                <button onclick="updateQty(${index}, 1)" class="w-6 h-6 bg-white/20 hover:bg-white/30 rounded text-xs text-white font-bold">+</button>
-                                <button onclick="removeItem(${index})" class="text-red-400 hover:text-red-300 ml-2 text-xs">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                });
-                container.innerHTML = html;
-            }
-
-            calculateTotal();
-        }
-
-        // Calcular Totais e Atualizar UI
-        function calculateTotal() {
-            const tamanhoSelect = document.getElementById('sim-tamanho');
-            const summaryTamanho = document.getElementById('summary-tamanho');
-            const totalQtyEl = document.getElementById('total-qty');
-            const totalPriceEl = document.getElementById('total-price');
-
-            let totalQty = 0;
-            let totalPrice = 0;
-
-            cart.forEach(item => {
-                totalQty += item.qty;
-                totalPrice += item.price * item.qty;
-            });
-
-            // Nome do Tamanho
-            const selectedText = tamanhoSelect.options[tamanhoSelect.selectedIndex].text.split('(')[0];
-            summaryTamanho.innerText = selectedText.trim();
-
-            totalQtyEl.innerText = `${totalQty} un`;
-            totalPriceEl.innerText = `R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
-        }
-
-        // Enviar Mensagem Formatada para o WhatsApp
-        function sendOrderWhatsApp() {
-            if (cart.length === 0) {
-                alert("Por favor, adicione pelo menos um sabor ao seu pedido antes de enviar!");
-                return;
-            }
-
-            const tamanhoSelect = document.getElementById('sim-tamanho');
-            const tamanhoNome = tamanhoSelect.options[tamanhoSelect.selectedIndex].text.split('(')[0].trim();
-            const obs = document.getElementById('sim-obs').value.trim();
-
-            let totalQty = 0;
-            let totalPrice = 0;
-
-            let text = `*NOVO PEDIDO - DIVINA EMPADA*\n\n`;
-            text += `*Tamanho Selecionado:* ${tamanhoNome}\n\n`;
-            text += `*Itens do Pedido:*\n`;
-
-            cart.forEach(item => {
-                const subtotal = item.price * item.qty;
-                totalQty += item.qty;
-                totalPrice += subtotal;
-                text += `• ${item.qty}x ${item.name} (R$ ${subtotal.toFixed(2).replace('.', ',')})\n`;
-            });
-
-            text += `\n*Quantidade Total:* ${totalQty} empada(s)`;
-            text += `\n*Valor Estimado:* R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
-
-            if (obs) {
-                text += `\n\n*Observações/Data:* ${obs}`;
-            }
-
-            text += `\n\n_Aguardando confirmação da taxa de entrega._`;
-
-            // Número de telefone para envio (pode ser trocado depois)
-            const phone = "5500000000000"; 
-            const encodedText = encodeURIComponent(text);
-            window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
-        }
-
-        // Formulário de Contato Fake
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            alert("Obrigado pelo contato! Esta é uma demonstração do site. O formulário funcionará perfeitamente após a integração do seu e-mail!");
-            e.target.reset();
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
